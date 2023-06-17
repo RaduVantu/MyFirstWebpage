@@ -1,0 +1,167 @@
+<!-- imports the Acme font from Google Fonts-->
+<link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet" type="text/css">
+
+<!-- CSS properties block-->
+<style>
+/* Selector properties */
+  body {
+    background-color: #0a0024;
+    color: white;
+    margin-left: 25px;    
+  }  
+  h1 {
+    background-color: #010c5c;
+    color: white;
+    font-family: Magneto, monospace;
+    font-size: 50px;
+    text-align: center;
+    margin: -10px -25px 70px -25px;    
+    padding: 20px;
+  }
+  h3 {
+    font-family: Acme, monospace;
+    font-size: 30px;
+    padding-left: 50px;
+    color: #7498fc;
+  }
+  /* max-width ensures the photo doesn't expand beyond the div's borders. The auto height resizes the photo depending on the window width */
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20%;
+  }
+  li {
+    margin-left: 30px;
+  }
+  /* applied different colors for not visited / visited links to improve visibility on chosen background*/
+  a:link {
+    color: #1bfaf6;
+  }
+  a:visited {
+  color: pink;
+  }  
+/* Class properties */  
+  .calibri-font {
+    font-family: Calibri, arial;
+  }
+  .footer-links-p {    
+    text-align: center;
+    height: 10px;
+  }  
+/* Id properties*/
+  #bio-div {
+    font-family: Tahoma, arial;
+    text-align: justify;
+    font-size: 22px;
+    color: #dbd1b4;
+  }
+  #photo {
+    width: 35%;
+    float: right;
+    text-align: center;
+    font-family: Calibri, arial;        
+  }
+  #radio-div {    
+    width: 500px;
+    text-align: center;
+    font-family: Tahoma, arial;
+    font-size: 20px;
+    color: #dbd1b4;
+    margin-bottom: 50px;
+  }  
+  #Submit-button {
+    padding: 5px 20px 5px 20px;
+    margin-top: 20px;
+    font-weight: bold;
+    background-color: #bed4e8;
+    color: #010c5c;
+    border-width: 5px;    
+    border-radius: 5px;    
+  }
+  #footer-links-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;    
+    font-family: Calibri, arial;
+    font-size: 20px;
+  }  
+  #copyright-p {    
+    font-size: 14px;
+    text-align: right;
+    padding: 30px 25px 5px 0px;
+  }
+</style>
+
+<head>
+  <title> Radu's webpage </title>
+</head>
+
+<header> 
+  <h1> Welcome to Radu's webpage </h1>
+</header>
+<body>
+  <article>
+  <h3> A little something about me </h3>  
+<!-- Div containing the image and its caption -->
+  <div>
+  <figure id="photo">
+    <img src="https://img.freepik.com/premium-photo/yin-yang-made-fire-water-symbol-harmony_742252-2564.jpg?w=740" alt="yin and yang artistic picture">
+    <figcaption style="margin-top: 15px">
+      There is no warmth without cold, no light without darkness, no good without bad. The trick is achieving a balance between them
+    </figcaption>
+  <figure>
+  </div>  
+<!-- Div containing the bio related paragraphs -->
+  <div id="bio-div">
+<!-- '&emsp;' adds an indentation to the first row of the paragraph -->
+  <p> &emsp;From a young age I loved puting things together. It started with me taking apart my toys, just to try to rebuild them, and it flared up once I got my first Lego set.
+</p>
+  <p> &emsp;This is probably the reason why, in my adult life, I loved working in constructions, why I love RPG and colony building games, as I am shaping characters or settlements from the ground up, and why I love programming, where I get to build software from variables, methods, classes, etc.</p>       
+  <br>
+  </div> 
+  </article>
+  <h3> Guess the lie </h3>
+<!-- Div containing two thruths and a lie. It applies the calibri-font class proprieties -->
+  <div class="calibri-font">
+  <p> &emsp;Here are two truths and lie about me:</p>
+  <ul>
+    <li> I love driving </li>
+    <li> I like knowledge </li>
+    <li> I play football </li>
+  </ul>
+  </div>
+  <h3> One last thing</h3>
+<!-- Div containing the radio inputs -->
+  <div id="radio-div">
+  <p> &emsp;What is your impression about my simple webpage? </p>
+<!-- Form for the radio inputs. Action set as dead link -->
+  <form action="#">
+<!-- Each radio input is wrapped in its own label and is part of the 'impresion' group -->
+  <label for="radio-bad" style="margin-right: 25px; color: red">
+    <input id="radio-bad" type="radio" name="impresion" value="bad" required> Bad
+  </label>
+  <label for="radio-soso" style="color: yellow">
+    <input id="radio-soso" type="radio" name="impresion" value="soso"> So-So
+  </label> 
+  <label for="radio-good" style="margin-left: 25px; color: green">
+    <input id="radio-good" type="radio" name="impresion" value="good"> Good
+   </label>
+   <br>
+<!-- The submit button for the form -->
+   <button id="Submit-button" type="submit"> Submit </button>
+  </div>
+  </form>
+</body>
+
+<footer>
+<!-- Horizontal line delimiting the footer -->
+  <hr style="margin: 0px -20px 0px -20px">
+<!-- Div containing the pifferent resources used for creating this page -->
+  <p style="font-size: 22px; color: #ff8324; height: 15px; text-align: center"> Resources </p>
+  <div id="footer-links-div">  
+  <p class="footer-links-p"> Acme font source <a href="https://fonts.google.com/specimen/Acme" target="_blank"> Google Fonts  </a> </p>
+  <p class="footer-links-p"> Image source <a href="https://www.freepik.com/premium-photo/yin-yang-made-fire-water-symbol-harmony_34622668.htm" target="_blank" > freepik.com</a></p>
+  <p class="footer-links-p"> Website created on <a href="https://codepen.io/" target="_blank">Codepen</a> </p>  
+  </div>
+  <p id="copyright-p"> &copy; Copyright 2020 Radu Vantu </p>
+</footer>

@@ -1,2 +1,1 @@
-# MyFirstWebpage
-A simple webpage
+Coming soon

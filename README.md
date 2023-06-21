@@ -24,6 +24,9 @@ and a lie. The page would be developed using HTML and CSS, and would satisfy the
 <h3> Technology used </h3>
 	- <a href="https://codepen.io/">CodePen</a>
 
-<h3> Screenshots </h3>
-
-<p> Coming soon </p>
+<h3> Images </h3>
+<br/>
+<br/>
+<p align="center">	
+	<a href="https://imgur.com/OKGYfJf"><img src="https://i.imgur.com/OKGYfJf.jpg" title="source: imgur.com" /></a>
+</p>
